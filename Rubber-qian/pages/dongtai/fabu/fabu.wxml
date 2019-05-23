@@ -1,0 +1,29 @@
+<cu-custom bgColor="bg-cyan" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">动态发布</view>
+</cu-custom>
+<view class='box'>
+  <view class='cname'>
+    <input type="text" class="text-xxl radius" placeholder="课程名称" bindblur='cnameHandler'></input>
+  </view>
+  <view class='content'>
+    <textarea type="text" class="text-xl radius" placeholder="必须是与课程相关的内容哦..." bindinput='contentHandler'></textarea>
+  </view>
+  <view class="margin-tb-xxl text-center">
+    <button class="cu-btn round bg-green" bindtap='fabuHandler' data-target="Modal">发布</button>
+  </view>
+</view>
+
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">发布状态</view>
+      <view class="action" bindtap="hideModal">
+        <text class="icon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      {{info}}
+    </view>
+  </view>
+</view>

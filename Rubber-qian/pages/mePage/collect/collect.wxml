@@ -1,0 +1,23 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">我的收藏</view>
+</cu-custom> 
+
+<view class="cu-timeline" wx:for="{{collection}}">
+
+  <view class="cu-item text-green">
+    <view class="bg-gradual-green content shadow-blur">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">计算机学院</view>
+        <view class="cu-tag line-white">2019/04/28</view>
+      </view>
+      <view class="margin-top-sm text-content text-df" style='line-height: 2.0;'>
+        <view>{{item.couName}}</view>
+        <view>{{item.couTea}} {{item.couDate}}</view>
+        <view>{{item.couAddr}}</view>
+        <view>上课时间 {{item.cycle}}</view>
+        <view> {{item.couJie}}</view>
+      </view>
+    </view>
+  </view> 
+</view>

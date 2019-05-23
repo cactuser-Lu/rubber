@@ -1,0 +1,24 @@
+<cu-custom bgColor="bg-cyan" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">学院详情</view>
+</cu-custom>
+
+<view class='course bg-gradual-{{colorList[index%4].color}}' wx:for="{{courseData}}">
+  <view class='cname'>
+    <view class=''>
+      <text class="text-xxl bot1 radius" style=';'>{{item.couName}}</text>
+    </view>
+    <view class='bot4'>
+      <text class='bot2 text-df ' style=''>{{item.couTea}}</text>
+      <text class='bot3 ' style=''>{{item.cycle}}</text>
+    </view>
+  </view>
+  <view class='cdetail'>
+    <text class='item'>{{item.couDate}}</text>
+    <text class='item'>{{item.couJie}}</text>
+    <text class='item'>{{item.couAddr}}</text>
+  </view>
+  <view class='text-center' style='writing-mode: vertical-rl; font-size: 60rpx;margin-right:60rpx;'>
+    <text class="{{flaglist[index].iconflag?'icon-favorfill text-yellow':'icon-favor text-white'}} lg" bindtap='collectHandler' data-index="{{index}}"></text>
+  </view>
+</view>

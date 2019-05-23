@@ -1,0 +1,25 @@
+/* pages/dongtai/fabu/fabu.wxss */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 550rpx;
+  background-color: white;
+  border: 2rpx solid #e0e0e0;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx #e0e0e0;
+  padding-top: 14rpx;
+  padding-left: 14rpx;
+  margin: 10rpx 15rpx;
+}
+
+.box .cname {
+  flex: 1;
+  padding-top: 14rpx;
+}
+.box .content{
+  flex:3;
+  border-top: 2rpx solid #e0e0e0;
+  margin-top: 14rpx;
+  padding-top: 24rpx;
+}

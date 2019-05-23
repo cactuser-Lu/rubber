@@ -1,0 +1,52 @@
+page{
+  padding-top: 100rpx;
+}
+.course{
+  display: flex;
+  background-color: white;
+  border: 2rpx solid #e0e0e0;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx #e0e0e0;
+  padding-top: 24rpx;
+  margin: 10rpx 15rpx;
+}
+.course .bot1{
+display: block;
+margin-left: 25rpx;
+
+color: white;
+}
+.course .bot2{
+margin: 5rpx;
+color:white;
+}
+.course .bot3{
+margin: 5rpx;
+color: white;
+}
+.course .bot4{
+margin-top: 15rpx;
+margin-left: 22rpx;
+color: white;
+}
+.cdetail{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 60rpx;
+  padding-bottom: 40rpx;
+}
+.cdetail .item{
+   margin-top:10rpx;
+  font-size: 38rpx;
+  color: white;
+
+}
+.cu-tag:not([class*="bg"]):not([class*="line"]) {
+background-color:white;
+
+}
+.cname{
+  flex:1;
+  margin-top: 10rpx;
+}

@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/dongtai/dongtai",
+    "pages/dongtai/fabu/fabu",
+    "pages/mine/mine",
+    "pages/index/cou_detail/cou_detail",
+    "pages/index/null/null",
+    "pages/index/search/search",
+    "pages/mePage/collect/collect",
+    "pages/mePage/meDongtai/meDongtai",
+    "pages/mePage/CourseLog/CourseLog",
+    "pages/mePage/about/about"
+  ],  
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "WHUT-helper",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#0094ff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/Home.png",
+        "selectedIconPath": "icon/Home-act.png"
+      },
+      {
+        "pagePath": "pages/dongtai/dongtai",
+        "text": "动态",
+        "iconPath": "icon/dongtai.png",
+        "selectedIconPath": "icon/dongtai-act.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icon/wode.png",
+        "selectedIconPath": "icon/wode-act.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

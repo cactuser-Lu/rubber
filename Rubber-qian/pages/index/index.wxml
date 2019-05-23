@@ -1,0 +1,56 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">首页</view>
+</cu-custom>
+<swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key>
+    <block wx:if='{{index===0}}'>
+      <view class="bg-img bg-mask padding-tb-xl" style="background-image: url('{{swiperList[0].url}}');height: 414rpx;">
+        <view class="padding-xl text-white">
+          <view class="padding-xs text-xl">
+            今日诗词：
+          </view>
+          <view class="padding-xs text-xl">
+            {{jinrishici}}
+          </view>
+        </view>
+      </view>
+    </block>
+    <block wx:else>
+      <image src="{{item.url}}" mode="aspectFill"></image>
+
+    </block>
+  </swiper-item>
+</swiper>
+
+<navigator class="cu-bar bg-white search" url='../index/search/search'>
+  <view class="search-form round">
+    <text class="icon-search"></text>
+    <text>搜索课程</text>
+  </view>
+</navigator>
+
+<view class='mid'>
+  <view class="tiao">
+    <image src="../../icon/shu.png"></image>
+    <text>学院入口</text>
+</view> 
+<view class='grides'>
+  <navigator class='item' wx:for="{{grides}}" url="../index/{{index<=3?'cou_detail/cou_detail':'null/null'}}?sid={{index+1}}" wx:key="{{index}}">
+    <image src="{{item.url}}"></image>
+    <text>{{item.name}}</text>
+  </navigator>
+</view>
+</view>
+
+<view class='mid'>
+  <view class="tiao">
+    <image src="../../icon/shu.png"></image>
+    <text>其他功能</text>
+</view>
+<view class='grides'>
+  <view class='item act'>
+    <image src="{{qita.url}}"></image>
+    <text>{{qita.name}}</text>
+  </view>
+</view>
+</view>

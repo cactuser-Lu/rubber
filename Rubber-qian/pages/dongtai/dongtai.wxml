@@ -1,0 +1,38 @@
+<cu-custom bgColor="bg-gradual-red">
+  <view slot="content">动态</view>
+</cu-custom>
+<navigator class="fabu" url='../dongtai/fabu/fabu'>
+<view class="cu-avatar round lmg act" style="background-image:url({{userInfo.avatarUrl}});" ></view>
+<text>发布动态...</text>
+</navigator>
+<view class='bor' wx:for="{{donInfo}}">
+ 
+  <view class="tiao">
+    <view class="cu-avatar round lmg act" style="background-image:url({{item.imgUri}});"></view>
+      <view class="flex-sub">
+        <view id='pp'>{{item.uname}}</view>
+        <text class='text-grey'>{{item.date}}</text>
+      </view>
+  </view>
+
+  <view class="content02">
+   <text>{{item.content}}</text>
+  </view>
+
+  <view class="text-gray text-xl02 text-right padding box">
+
+    <view class="item">
+      <text class="{{flaglistDon[index].zanflag?'icon-appreciatefill':'icon-appreciate'}} margin-lr-xss" bindtap='zanHandler' data-index="{{index}}"></text><text class="text-df margin-right-lg">{{item.zan}}</text>
+    </view>
+  
+    <view class="item">
+    <text class="icon-message margin-lr-xss"></text><text class="text-df margin-right-lg" bindtap='liuyanHandler'>30</text>
+    </view>
+
+    <view class="item">
+    <text class="text-df margin-right-sm02">{{item.cname}}</text>
+    </view>
+
+ </view>
+
+</view>

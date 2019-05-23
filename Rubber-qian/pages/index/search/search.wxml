@@ -1,0 +1,27 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">课程</view>
+</cu-custom>
+<view class="cu-bar bg-white search fixed" style="top:{{CustomBar}}px">
+  <view class="search-form round">
+    <text class="icon-search"></text>
+    <input type="text" placeholder="搜索课程" confirm-type="search" bindinput="searchCouHandler"></input>
+  </view>
+</view>
+
+<view class='course bg-gradual-{{colorList[index%4].color}}' wx:for="{{courseData}}">
+  <view class='cname'>
+    <view class=''>
+      <text class="text-xxl bot1 radius" style=';'>{{item.couName}}</text>
+    </view>
+    <view class='bot4'>
+      <text class='bot2 text-df ' style=''>{{item.couTea}}</text>
+      <text class='bot3 ' style=''>{{item.cycle}}</text>
+    </view>  
+  </view>
+  <view class='cdetail'>
+    <text class='item'>{{item.couDate}}</text>
+    <text class='item'>{{item.couJie}}</text>
+    <text class='item'>{{item.couAddr}}</text>
+  </view>
+</view>
